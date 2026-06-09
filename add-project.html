@@ -39,7 +39,7 @@
       }
 
       try {
-        const res = await fetch('http://localhost:5000/api/projects', {
+        const res = await fetch(window.location.origin + '/api/projects', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ title, description, tags, liveUrl, githubUrl })
