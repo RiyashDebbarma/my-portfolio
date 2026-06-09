@@ -19,7 +19,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 // ── LOAD PROJECTS FROM API ───────────────────
-const API = 'http://localhost:5000';
+const API = window.location.origin;
 
 // Fallback projects shown if the API is unreachable
 const fallbackProjects = [
