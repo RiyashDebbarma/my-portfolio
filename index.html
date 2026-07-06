@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Riyash Debbarma | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#home" class="nav-logo">Riyash Debbarma</a>
+      <a href="#home" class="nav-logo">riyash<span class="purple">.</span></a>
       <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -24,117 +29,186 @@
     </div>
   </nav>
 
+  <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-content">
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">Riyash Debbarma</h1>
-      <p class="hero-role">Full-Stack Developer, Designer &amp; ECE Student</p>
-      <p class="hero-desc">Final-year B.Tech student passionate about creating innovative web applications and learning new technologies. Focused on building impactful digital products that make a difference.</p>
+    <div class="hero-inner">
+      <div class="available-badge">● Available for new Projects</div>
+      <h1 class="hero-heading">Hey! , I am <span class="purple">Riyash</span></h1>
+      <h2 class="hero-sub">Full-Stack Developer & ECE Engineer</h2>
+      <p class="hero-desc">I craft beautiful, functional digital experiences that bring ideas to life. Specializing in modern web development and hardware-software integration.</p>
       <div class="hero-btns">
-        <a href="#projects" class="btn btn-primary">See My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="#projects" class="btn-purple">View My Work</a>
+        <a href="#contact" class="btn-outline-white">Get in Touch</a>
       </div>
-    </div>
-    <div class="hero-avatar">
-      <div class="avatar-circle">RD</div>
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
       <div class="about-grid">
-        <div class="about-text">
-          <p>I am a final-year B.Tech student in Electronics and Communication Engineering with a passion for technology, web development, and innovation. I enjoy building modern, user-friendly web applications and continuously exploring new technologies to expand my skills.</p>
-          <p>Beyond academics, I have worked on various projects that strengthened my problem-solving, teamwork, and technical abilities. I am always eager to learn, take on new challenges, and transform ideas into impactful experiences.</p>
-          <div class="about-stats">
-            <div class="stat"><span class="stat-num">3+ </span><span class="stat-label">Projects Built</span></div>
-            <div class="stat"><span class="stat-num">1+</span><span class="stat-label">Technologies</span></div>
-            <div class="stat"><span class="stat-num">Fresher</span><span class="stat-label">Years Experience</span></div>
-          </div>
+        <div class="about-text reveal-left">
+          <h2 class="sec-title">About Me</h2>
+          <p class="about-p">I'm a passionate developer and final-year B.Tech ECE student with a love for building digital products that users love. I believe in the power of good design and clean code to solve real problems.</p>
+          <p class="about-p">When I'm not coding, you'll find me exploring new technologies, working on IoT projects, or learning new frameworks. I built an Accident Identification System using Arduino, GPS and GSM as my final year project.</p>
+          <p class="about-p">I'm always excited to work on projects that challenge me to grow and learn something new.</p>
         </div>
-        
-        <div class="about-img-wrap">
-          <img src="img2.jpeg" alt="Riyash Debbarma" style="border-radius:16px; width:100%; max-width:360px; display:block; margin:0 auto;" />
+        <div class="about-img-col reveal-right">
+          <div class="about-img-wrap">
+            <img src="imgp.jpeg" alt="Riyash Debbarma" />
+            <div class="img-decor">+</div>
+            <div class="img-decor2">+</div>
+            <div class="img-decor3">◆</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt" id="skills">
+  <!-- SKILLS -->
+  <section class="section" id="skills">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
+      <h2 class="sec-title reveal">Skills & Technologies</h2>
       <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Frontend</h3>
-          <div class="skill-tags">
-            <span class="tag tag-blue">HTML</span>
-            <span class="tag tag-blue">CSS</span>
-            <span class="tag tag-blue">JavaScript</span>
-            <span class="tag tag-blue">React</span>
+        <div class="skill-box reveal">
+          <p class="skill-box-title">Frontend</p>
+          <div class="stags">
+            <span class="stag">HTML</span><span class="stag">CSS</span>
+            <span class="stag">JavaScript</span><span class="stag">React</span>
           </div>
         </div>
-        <div class="skill-category">
-          <h3>Backend</h3>
-          <div class="skill-tags">
-            <span class="tag tag-green">Node.js</span>
-            <span class="tag tag-green">Express.js</span>
-            <span class="tag tag-green">REST APIs</span>
+        <div class="skill-box reveal">
+          <p class="skill-box-title">Backend</p>
+          <div class="stags">
+            <span class="stag">Node.js</span><span class="stag">Express.js</span>
+            <span class="stag">REST APIs</span>
           </div>
         </div>
-        <div class="skill-category">
-          <h3>Database</h3>
-          <div class="skill-tags">
-            <span class="tag tag-purple">MongoDB</span>
-            <span class="tag tag-purple">MySQL</span>
+        <div class="skill-box reveal">
+          <p class="skill-box-title">Database</p>
+          <div class="stags">
+            <span class="stag">MongoDB</span><span class="stag">MySQL</span>
           </div>
         </div>
-        <div class="skill-category">
-          <h3>Tools</h3>
-          <div class="skill-tags">
-            <span class="tag tag-amber">Git</span>
-            <span class="tag tag-amber">GitHub</span>
-            <span class="tag tag-amber">VS Code</span>
+        <div class="skill-box reveal">
+          <p class="skill-box-title">Hardware & IoT</p>
+          <div class="stags">
+            <span class="stag">Arduino</span><span class="stag">GPS</span>
+            <span class="stag">GSM</span><span class="stag">IoT</span>
+          </div>
+        </div>
+        <div class="skill-box reveal">
+          <p class="skill-box-title">Tools</p>
+          <div class="stags">
+            <span class="stag">Git</span><span class="stag">GitHub</span>
+            <span class="stag">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-box reveal">
+          <p class="skill-box-title">Languages</p>
+          <div class="stags">
+            <span class="stag">C++</span><span class="stag">Python</span>
+            <span class="stag">JavaScript</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="sec-title reveal">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">2026</div>
+          <div class="timeline-card">
+            <p class="tl-role">Final Year B.Tech Student</p>
+            <p class="tl-company purple">NIT / Engineering College · ECE Department</p>
+            <p class="tl-desc">Completing Bachelor of Technology in Electronics and Communication Engineering. Built an Accident Identification System as final year project using Arduino, GPS NEO-6M and SIM800L GSM module.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">2025</div>
+          <div class="timeline-card">
+            <p class="tl-role">Full-Stack Developer · Self-taught</p>
+            <p class="tl-company purple">Personal Projects & Open Source</p>
+            <p class="tl-desc">Built multiple full-stack web applications using Node.js, Express, MongoDB and vanilla JavaScript. Deployed projects on Render with real databases and live APIs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
   <section class="section" id="projects">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid" id="projects-grid">
-        <!-- Projects loaded dynamically from database -->
-      </div>
+      <h2 class="sec-title center reveal">My Projects</h2>
+      <p class="sec-sub center reveal">A collection of projects I've worked on, ranging from web applications to IoT systems.</p>
+      <div class="projects-grid" id="projects-grid"></div>
     </div>
   </section>
 
-  <section class="section section-alt" id="contact">
+  <!-- PROJECT OVERLAY -->
+  <div class="proj-overlay" id="proj-overlay">
+    <div class="proj-overlay-bg" id="proj-overlay-bg"></div>
+    <div class="proj-detail" id="proj-detail">
+      <button class="proj-close" id="proj-close">✕</button>
+      <div class="proj-detail-header" id="proj-detail-header">
+        <span class="big-num" id="detail-num"></span>
+        <span class="big-icon" id="detail-icon"></span>
+        <h2 id="detail-title"></h2>
+      </div>
+      <div class="proj-detail-body">
+        <p id="detail-desc"></p>
+        <div class="proj-detail-tags" id="detail-tags"></div>
+        <div class="proj-detail-btns">
+          <a id="detail-live" href="#" target="_blank" class="proj-detail-btn primary">View Details</a>
+          <a id="detail-github" href="#" target="_blank" class="proj-detail-btn secondary">🐙 GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
     <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
+      <h2 class="sec-title center reveal">Let's Work Together</h2>
       <div class="contact-wrap">
-        <div class="contact-info">
-          <p>I'm currently open to new opportunities. Whether you have a project, a question, or just want to say hi — my inbox is always open!</p>
-          <div class="contact-links">
-            <a href="mailto:riyashd2@gmail.com" class="contact-link">Email: riyashd2@gmail.com</a>
-            <a href="https://github.com/RiyashDebbarma" target="_blank" class="contact-link">GitHub: github.com/RiyashDebbarma</a>
-            <a href="https://www.linkedin.com/in/riyash-debbarma-1559ba289/" target="_blank" class="contact-link">LinkedIn: linkedin.com/in/riyash-debbarma</a>
+        <div class="contact-form-col reveal-left">
+          <form id="contact-form">
+            <p class="form-label">Send me a message</p>
+            <label>Name</label>
+            <input type="text" id="fname" required />
+            <label>Email</label>
+            <input type="email" id="femail" required />
+            <label>Message</label>
+            <textarea id="fmessage" rows="5" required></textarea>
+            <button type="submit" class="btn-purple full">Send Message</button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+        <div class="contact-info-col reveal-right">
+          <p class="contact-p">I'm always open to discussing new opportunities, creative projects, or partnerships. Whether you have a specific project in mind or just want to explore possibilities, I'd love to connect.</p>
+          <ul class="contact-services">
+            <li>● Web & Mobile Development</li>
+            <li>● IoT & Embedded Systems</li>
+            <li>● Technical Consulting</li>
+            <li>● Full-Stack Projects</li>
+          </ul>
+          <p class="socials-label">My Socials</p>
+          <div class="socials">
+            <a href="https://github.com/RiyashDebbarma" target="_blank" class="social-icon">GH</a>
+            <a href="mailto:riyashd2@gmail.com" class="social-icon">✉</a>
+            <a href="https://linkedin.com/in/riyash-debbarma" target="_blank" class="social-icon">LI</a>
           </div>
         </div>
-        <form class="contact-form" id="contact-form">
-          <input type="text" placeholder="Your Name" id="fname" required />
-          <input type="email" placeholder="Your Email" id="femail" required />
-          <textarea placeholder="Your Message" id="fmessage" rows="5" required></textarea>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="form-status" id="form-status"></p>
-        </form>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <p>Built by <strong>Riyash Debbarma</strong> &middot; 2026</p>
+    <p>© 2026 <span class="purple">Riyash Debbarma</span> · Built with Node.js & MongoDB</p>
   </footer>
 
   <script src="script.js"></script>
