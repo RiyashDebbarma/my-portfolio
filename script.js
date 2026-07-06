@@ -69,8 +69,7 @@ const grads = [
 
 const fallbackProjects = [
   { title: "My Portfolio", description: "A full-stack personal portfolio built with Node.js, Express, MongoDB and vanilla JS. Deployed live on Render.", tags: ["Node.js","MongoDB","CSS"], liveUrl: "https://my-portfolio-uwn2.onrender.com", githubUrl: "https://github.com/RiyashDebbarma/my-portfolio" },
-  { title: "Accident Identification System", description: "Real-time vehicle accident detection using ADXL335 accelerometer, GPS NEO-6M and SIM800L GSM module. Sends SMS alert with GPS location to emergency contacts.", tags: ["Arduino","GPS","GSM","IoT","C++"], liveUrl: "#", githubUrl: "#" },
-  { title: "REST API Backend", description: "A full REST API for a task manager app with complete CRUD operations, JWT authentication and MongoDB integration.", tags: ["Node.js","Express","JWT","MongoDB"], liveUrl: "#", githubUrl: "#" }
+  { title: "Accident Identification System", description: "Real-time vehicle accident detection using ADXL335 accelerometer, GPS NEO-6M and SIM800L GSM module. Sends SMS alert with GPS location to emergency contacts.", tags: ["Arduino","GPS","GSM","IoT","C++"], liveUrl: "#", githubUrl: "https://github.com/RiyashDebbarma/Accident-Identification-ECE-Project" }
 ];
 
 function createCard(p, i) {
