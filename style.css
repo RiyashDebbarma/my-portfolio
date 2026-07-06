@@ -176,13 +176,13 @@ ul { list-style: none; }
 }
 
 .about-img-wrap img {
-  width: 280px;
-  height: 280px;
+  width: 350px;
+  height: 340px;
   object-fit: cover;
-  border-radius: 20px;
-  border: 1px solid rgba(124,58,237,0.2);
+  border-radius: 10px;
+ 
   position: relative; z-index: 1;
-  box-shadow: 0 0 60px rgba(124,58,237,0.15);
+  
 }
 
 .img-decor { position: absolute; top: -10px; right: 20px; font-size: 28px; color: #7c3aed; font-weight: 900; z-index: 2; }
