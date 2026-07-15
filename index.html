@@ -19,8 +19,9 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -32,7 +33,7 @@
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-inner">
-      <div class="available-badge">● Available for new Projects</div>
+      <!-- <div class="available-badge">● Available for new Projects</div> -->
       <h1 class="hero-heading">Hey! , I am <span class="purple">Riyash</span></h1>
       <h2 class="hero-sub">Full-Stack Developer & ECE Engineer</h2>
       <p class="hero-desc">I craft beautiful, functional digital experiences that bring ideas to life. Specializing in modern web development and hardware-software integration.</p>
@@ -115,30 +116,7 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section" id="experience">
-    <div class="container">
-      <h2 class="sec-title reveal">Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="timeline-dot">2023-2027</div>
-          <div class="timeline-card">
-            <p class="tl-role">Final Year B.Tech Student</p>
-            <p class="tl-company purple">DIT University · ECE Department</p>
-            <p class="tl-desc">Completing Bachelor of Technology in Electronics and Communication Engineering. Built an Accident Identification System as final year project using Arduino, GPS NEO-6M and SIM800L GSM module and Many More.</p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-dot">2026</div>
-          <div class="timeline-card">
-            <p class="tl-role">Full-Stack Developer · Self-taught</p>
-            <p class="tl-company purple">Personal Projects & Open Source</p>
-            <p class="tl-desc">Built multiple full-stack web applications using Node.js, Express, MongoDB and vanilla JavaScript. Deployed projects on Render with real databases and live APIs.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <!-- PROJECTS -->
   <section class="section" id="projects">
@@ -169,6 +147,106 @@
       </div>
     </div>
   </div>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="sec-title reveal">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">2023-2027</div>
+          <div class="timeline-card">
+            <p class="tl-role">Final Year B.Tech Student</p>
+            <p class="tl-company purple">DIT University · ECE Department</p>
+            <p class="tl-desc">Completing Bachelor of Technology in Electronics and Communication Engineering. Built an Accident Identification System as final year project using Arduino, GPS NEO-6M and SIM800L GSM module and Many More.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">2026</div>
+          <div class="timeline-card">
+            <p class="tl-role">Full-Stack Developer · Self-taught</p>
+            <p class="tl-company purple">Personal Projects & Open Source</p>
+            <p class="tl-desc">Built multiple full-stack web applications using Node.js, Express, MongoDB and vanilla JavaScript. Deployed projects on Render with real databases and live APIs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+<section class="section" id="certifications">
+  <div class="container">
+    <h2 class="sec-title reveal">Certifications</h2>
+    <div class="cert-grid">
+
+      <div class="cert-card reveal" onclick="openCert('Thiranex.jpeg', 'Full Stack Web Development', 'Thiranex · 2026')">
+        <div class="cert-preview">
+          <img src="Thiranex.jpeg" alt="Full Stack Web Development" />
+          <div class="cert-overlay">
+            <span>🔍 View Full</span>
+          </div>
+        </div>
+        <div class="cert-info">
+          <h3 class="cert-title">Full Stack Web Development</h3>
+          <p class="cert-issuer purple">Thiranex · 2026</p>
+          <div class="cert-tags">
+            <span class="stag">Node.js</span>
+            <span class="stag">MongoDB</span>
+            <span class="stag">Express</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" onclick="openCert('YP.png', 'TCS iON Career Edge – Young Professional', 'TCS iON · 2024')">
+        <div class="cert-preview">
+          <img src="YP.png" alt="TCS iON Career Edge – Young Professional" />
+          <div class="cert-overlay">
+            <span>🔍 View Full</span>
+          </div>
+        </div>
+        <div class="cert-info">
+          <h3 class="cert-title">TCS iON Career Edge – Young Professional</h3>
+          <p class="cert-issuer purple">TCS iON · 2024</p>
+          <div class="cert-tags">
+            <span class="stag">Resume Writing</span>
+            <span class="stag">Soft Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" onclick="openCert('DSA.png', 'DSA-Java', 'Apna College · 2023')">
+        <div class="cert-preview">
+          <img src="DSA.png" alt="DSA-Java" />
+          <div class="cert-overlay">
+            <span>🔍 View Full</span>
+          </div>
+        </div>
+        <div class="cert-info">
+          <h3 class="cert-title">DSA-Java</h3>
+          <p class="cert-issuer purple">Apna College · 2025</p>
+          <div class="cert-tags">
+            <span class="stag">DSA</span>
+            <span class="stag">Java</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATE LIGHTBOX -->
+<div class="cert-lightbox" id="cert-lightbox">
+  <div class="cert-lightbox-bg" onclick="closeCert()"></div>
+  <div class="cert-lightbox-inner">
+    <button class="cert-close" onclick="closeCert()">✕</button>
+    <img src="" alt="" id="cert-lightbox-img" />
+    <div class="cert-lightbox-info">
+      <h3 id="cert-lightbox-title"></h3>
+      <p id="cert-lightbox-issuer"></p>
+    </div>
+  </div>
+</div>
 
   <!-- CONTACT -->
   <section class="section section-dark" id="contact">

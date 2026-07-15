@@ -112,6 +112,25 @@ async function loadProjects() {
 }
 loadProjects();
 
+// ── CERTIFICATE LIGHTBOX ──────────────────
+window.openCert = function(src, title, issuer) {
+  document.getElementById('cert-lightbox-img').src     = src;
+  document.getElementById('cert-lightbox-img').alt     = title;
+  document.getElementById('cert-lightbox-title').textContent  = title;
+  document.getElementById('cert-lightbox-issuer').textContent = issuer;
+  document.getElementById('cert-lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeCert = function() {
+  document.getElementById('cert-lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+};
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeCert();
+});
+
 // ── OVERLAY ───────────────────────────────
 window.openProject = function(data, i) {
   const p = JSON.parse(decodeURIComponent(data));
@@ -156,3 +175,4 @@ form.addEventListener('submit', async e => {
   } catch(err) { status.style.color='#f87171'; status.textContent=err.message||'Could not send. Try again.'; }
   finally { btn.textContent='Send Message'; btn.disabled=false; }
 });
+
