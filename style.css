@@ -39,6 +39,52 @@ ul { list-style: none; }
   margin-right: auto;
 }
 
+/* ── RESUME ──────────────────────────────── */
+.resume-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  background: #111;
+  border: 1px solid #1e1e1e;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(124,58,237,0.1);
+}
+
+.resume-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #0d0d0d;
+}
+
+.resume-filename {
+  font-size: 13px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.resume-open-btn-top {
+  font-size: 13px;
+  font-weight: 500;
+  color: #7c3aed;
+  padding: 8px 18px;
+  border: 1px solid rgba(124,58,237,0.3);
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.resume-open-btn-top:hover {
+  background: rgba(124,58,237,0.1);
+  color: #a78bfa;
+}
+
+.resume-toolbar .btn-purple {
+  font-size: 13px;
+  padding: 8px 18px;
+  border-radius: 8px;
+}
+
 /* ── NAVBAR ──────────────────────────────── */
 .navbar {
   position: fixed;
